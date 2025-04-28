@@ -1,0 +1,352 @@
+/* Basic Reset and Box-Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* For responsiveness of main and sidebar */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    flex: 3; /* Takes up more space */
+    padding-right: 20px;
+}
+
+.latest-posts {
+    margin-bottom: 30px;
+}
+
+.post-summary {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.post-summary h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.post-summary .excerpt {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+.post-content article {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.post-header h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.post-meta {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.post-body {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.post-body h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.post-body ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.post-body li {
+    margin-bottom: 5px;
+}
+
+.post-footer {
+    color: #777;
+    font-size: 0.9em;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.post-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.comments-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sidebar {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.about-section,
+.categories-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.categories-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-section li {
+    margin-bottom: 8px;
+}
+
+.categories-section a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.categories-section a:hover {
+    color: #007bff;
+}
+
+/* About Page Styles */
+.about-page .about-section,
+.about-page .author-section,
+.about-page .contact-info {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+}
+
+.about-page .author-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-page .author-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-page .contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-page .contact-info li {
+    margin-bottom: 10px;
+}
+
+/* Contact Page Styles */
+.contact-page .contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+}
+
+.contact-page .contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contact-page .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-page textarea {
+    resize: vertical;
+}
+
+.contact-page button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.contact-page .contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.contact-page .contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-page .contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-page .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack main and sidebar */
+        padding: 15px;
+    }
+
+    main {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .sidebar {
+        padding-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-page .author-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-page .author-info img {
+        margin-bottom: 15px;
+    }
+}
