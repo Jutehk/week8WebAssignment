@@ -20,7 +20,7 @@ This is a personal blog created to demonstrate skills in HTML5, CSS3, and JavaSc
 
 ## Deployment
 
-* Deployed using GitHub Pages at: 
+* Deployed using GitHub Pages at: https://jutehk.github.io/week8WebAssignment/
 
 ## Instructions
 
